@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: blue;
+}
+.navbar h1 {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .navbar h1 {
+    font-size: xx-large;
+  }
+}
+
+.searchBox {
+  background-color: rgb(179, 179, 236);
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 400px;
+  align-items: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+}
+.weatherBox {
+  background-color: rgb(105, 105, 236);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.weatherBox div {
+  padding: 10px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 10px;
+}
