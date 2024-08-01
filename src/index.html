@@ -23,7 +23,11 @@
       <section class="searchBox bg-blue-950">
         <div class="box">
           <p class="text-white">Enter City Name:</p>
-          <input type="text" class="inputText w-48 rounded-md" />
+          <input type="text" class="inputText w-48 mb-1" />
+          <div class="dropdown">
+            <button class="dropbtn">Recently Searched Cities</button>
+            <div class="dropdown-content" id="dropdown-content"></div>
+          </div>
           <br />
           <button class="searchBtn bg-black p-1 text-white rounded-md w-48">
             search
@@ -34,8 +38,8 @@
           </button>
         </div>
       </section>
-      <section class="weatherBox bg-blue-400">
-        <div>
+      <section class="weatherBox bg-blue-500">
+        <div class="text-xl">
           <h1 class="cityName"></h1>
           <p class="temperature"></p>
           <p class="wind">Select the city or use current location!!</p>
@@ -53,10 +57,18 @@
       </section>
     </main>
     <section class="forcastBox">
-      <h1 style="text-align: center; font-size: xx-large; padding: 10px">
+      <h1
+        style="
+          text-align: center;
+          font-size: xx-large;
+          padding: 10px;
+          background: #000;
+          color: white;
+        "
+      >
         5-Day Forecast
       </h1>
-      <div class="forecast bg-blue-400">
+      <div class="forecast bg-blue-500">
         <div>
           <div class="forecast-item">
             <img
@@ -70,7 +82,7 @@
       </div>
     </section>
     <footer class="bg-black">
-      <p class="text-white">footer</p>
+      <p class="text-white text-center">footer</p>
     </footer>
   </body>
 </html>
